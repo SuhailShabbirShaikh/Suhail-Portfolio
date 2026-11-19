@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { portfolioConfig } from "@/data/portfolioData";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://suhail-portfolio-amber.vercel.app"),
   title: `${portfolioConfig.profile.name} — ${portfolioConfig.profile.title}`,
   description: portfolioConfig.profile.tagline,
   keywords: [
