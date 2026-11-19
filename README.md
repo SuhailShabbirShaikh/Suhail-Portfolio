@@ -1,93 +1,92 @@
-# Suhail — Portfolio & Client Showcase
+<div align="center">
 
-A modern, high-performance portfolio website built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Lucide Icons**, designed specifically for pitching to clients.
+# 🌟 Suhail Shabbir Shaikh — Developer & Consultant Portfolio
 
-## 🚀 Highlights & Features
+[![Live Portfolio](https://img.shields.io/badge/Live%20Website-suhail--portfolio--amber.vercel.app-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://suhail-portfolio-amber.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js%2015-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge)](LICENSE)
 
-- **Client-Centric Information Architecture**:
-  - **Hero**: Value proposition, conversion badges, and call-to-actions ("View Case Studies", "Discuss Your Project").
-  - **In-Depth Case Studies**: Dedicated showcases for:
-    - **FleetSync (Fleet Management)**: Real-time GPS tracking, dispatch orchestration, telemetry ingestion, and route optimization.
-    - **Ummat (Hajj & Umrah Platform)**: Pilgrimage booking marketplace, multi-stage checkout, visa document vault, and hotel manifest generation.
-  - **Services & Deliverables**: 4 structured offerings covering full-stack web, APIs & microservices, 0-to-1 MVP launches, and payment gateway orchestration.
-  - **Core Competencies**: Categorized technical stacks (Frontend, Backend, Databases, Cloud & DevOps, Specialized integrations).
-  - **Delivery Process & Trust**: 4-step engineering methodology and client testimonials.
-  - **Contact & Inquiry Intake**: Project category and timeline selection with responsive client intake form.
-- **Deep-Linkable Case Study Pages**:
-  - Dedicated URLs: `/projects/fleet-management` and `/projects/ummat-hajj-umrah` to share directly in client proposals or RFP responses.
-- **Design & Theme**:
-  - Clean Apple-inspired minimalist aesthetic.
-  - Integrated **Light / Dark Mode toggle** with persistent localStorage and OS preference detection.
-  - Responsive across all mobile, tablet, and desktop viewports.
+<p align="center">
+  <strong>High-performance, client-ready software consulting portfolio engineered with Next.js 15 App Router, TypeScript, and Tailwind CSS.</strong>
+</p>
+
+[**Explore Live Production Site »**](https://suhail-portfolio-amber.vercel.app) • [**Discuss a Project on WhatsApp »**](https://wa.me/4915215484759?text=Hi%20Suhail,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.) • [**LinkedIn »**](https://www.linkedin.com/in/suhail-shaikh-dev)
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Flagship Case Studies Showcased
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Utility**: `clsx` & `tailwind-merge`
+### 1. 🚛 [FleetSync: Intelligent Fleet & Telemetry Platform](https://suhail-portfolio-amber.vercel.app/projects/fleet-management)
+> **Real-time vehicle tracking, dispatch orchestration, and automated maintenance intelligence for commercial logistics fleets.**
+- **Scale & Performance**: Ingestion cluster processing **3,000+ incoming telemetry packets/second** via WebSockets and MQTT with Redis Pub/Sub.
+- **Geospatial Engine**: Vector tile rendering via Mapbox GL & PostGIS spatial indexing with sub-200ms geofence evaluation.
+- **Client Outcomes**:
+  - 📉 **18.4% monthly fuel cost reduction** through idling detection and route optimization.
+  - ⚡ **Order-to-dispatch latency cut from 6+ minutes to < 30 seconds**.
+  - 🛡️ **34% drop in unexpected vehicle breakdowns** via automated OBD-II diagnostics.
 
----
-
-## 📁 Project Structure
-
-```text
-├── src/
-│   ├── app/
-│   │   ├── globals.css                       # Apple-style tokens, dark mode variables
-│   │   ├── layout.tsx                        # Global layout with theme initialization script
-│   │   ├── page.tsx                          # Main landing page
-│   │   └── projects/
-│   │       ├── fleet-management/page.tsx     # FleetSync dedicated case study URL
-│   │       └── ummat-hajj-umrah/page.tsx     # Ummat dedicated case study URL
-│   ├── components/
-│   │   ├── Navbar.tsx                        # Responsive navigation with live status
-│   │   ├── Hero.tsx                          # Value proposition & metrics
-│   │   ├── ProjectCard.tsx                   # Interactive project cards with live UI mockups
-│   │   ├── CaseStudyDetail.tsx               # Full case study layout (Problem, Architecture, KPIs)
-│   │   ├── ServicesSection.tsx               # Client service packages & deliverables
-│   │   ├── SkillsSection.tsx                 # Categorized technical competencies
-│   │   ├── ProcessSection.tsx                # 4-stage delivery process & client reviews
-│   │   ├── ContactSection.tsx                # Client inquiry intake form
-│   │   ├── ThemeToggle.tsx                   # Light / Dark theme switcher
-│   │   └── Footer.tsx                        # Quick links & copyright
-│   └── data/
-│       └── portfolioData.ts                  # Single source of truth for all content & projects
-├── public/
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── README.md
-```
+### 2. 🕋 [Ummat: Digital Hajj & Umrah Pilgrimage Platform](https://suhail-portfolio-amber.vercel.app/projects/ummat-hajj-umrah)
+> **End-to-end pilgrim booking portal, verified package marketplace, and guided journey coordination system.**
+- **Architecture**: Stateful dynamic room occupancy engine (Single, Double, Triple, Quad sharing) with automated Ministry passenger manifest PDF generation.
+- **Security & Compliance**: AES-256 encrypted AWS S3 document vault for pilgrim passport and visa validation.
+- **Client Outcomes**:
+  - 🎟️ **3,500+ pilgrims booked** with zero inventory overbooking.
+  - 📈 **94.2% checkout conversion rate** using phased milestone deposits.
+  - ⏱️ **Visa turnaround slashed from 9 days to 48 hours**.
 
 ---
 
-## ⚡ Quick Start
+## 🛠️ Technology Stack
 
-### 1. Run Development Server
+| Domain | Technologies |
+| :--- | :--- |
+| **Frontend** | Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS, Lucide React, Framer Motion |
+| **Backend & Ingestion** | Node.js, Express, WebSockets (Socket.io), MQTT, Redis Pub/Sub, BullMQ Queues |
+| **Databases & Spatial** | PostgreSQL, PostGIS, TimescaleDB, Prisma ORM, MongoDB |
+| **Cloud & DevOps** | AWS (EC2, S3, RDS), Vercel, Docker, CI/CD GitHub Actions, Nginx |
+| **Integrations** | Mapbox GL JS, Google Maps SDK, Stripe Multi-Currency, Twilio, SendGrid |
+
+---
+
+## ✨ Design & Architecture Highlights
+
+- **Floating Island Navigation**: Frosted glassmorphism header with detached pill design and dynamic compression on scroll.
+- **Aura Depth & Animations**: Custom CSS ambient aura background orbs with subtle levitation (`@keyframes float` & `pulseGlow`).
+- **Living Dashboard Widgets**: Interactive tabs simulating real-time GPS telemetry, OBD diagnostics, room occupancy calculator, and manifest generation.
+- **Client-Centric Intake**: Direct WhatsApp quick-connect routing for both German (+49) and Indian (+91) lines.
+- **Light & Dark Theme**: System-preference-aware with seamless `localStorage` persistence.
+
+---
+
+## 🚀 Local Development
+
 ```bash
+# Clone the repository
+git clone https://github.com/SuhailShabbirShaikh/Suhail-Portfolio.git
+
+# Enter the directory
+cd Suhail-Portfolio
+
+# Install dependencies
+npm install
+
+# Start local development server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 2. Build for Production
-```bash
-npm run build
-npm run start
-```
+Visit `http://localhost:3000` in your browser.
 
 ---
 
-## ✍️ Customizing Your Content
+## 📬 Contact & Connect
 
-All profile information, project details, metrics, social links, and contact options are consolidated in:
-👉 [`src/data/portfolioData.ts`](./src/data/portfolioData.ts)
-
-You can update:
-- Your name, title, bio, and location
-- Social links (LinkedIn, GitHub, Twitter, Cal.com booking link)
-- Contact email
-- Add more case studies or tweak existing metrics
+- **Portfolio**: [suhail-portfolio-amber.vercel.app](https://suhail-portfolio-amber.vercel.app)
+- **Email**: [suhailshaikh9130@gmail.com](mailto:suhailshaikh9130@gmail.com)
+- **WhatsApp (DE)**: [+49 15215484759](https://wa.me/4915215484759)
+- **WhatsApp (IN)**: [+91 9130661137](https://wa.me/919130661137)
+- **LinkedIn**: [linkedin.com/in/suhail-shaikh-dev](https://www.linkedin.com/in/suhail-shaikh-dev)
+- **GitHub**: [@SuhailShabbirShaikh](https://github.com/SuhailShabbirShaikh)
