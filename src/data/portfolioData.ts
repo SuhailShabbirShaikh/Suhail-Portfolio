@@ -29,6 +29,8 @@ export interface CaseStudy {
     solution: string;
   }[];
   resultsAndImpact: string[];
+  liveDemoUrl?: string;
+  repoUrl?: string;
   mockupTheme: {
     badgeColor: string;
     accentColor: string;

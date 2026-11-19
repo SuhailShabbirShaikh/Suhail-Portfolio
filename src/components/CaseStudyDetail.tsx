@@ -17,7 +17,10 @@ import {
   Search,
   FileCheck,
   Calendar,
-  MessageSquare
+  MessageSquare,
+  ExternalLink,
+  Github,
+  Lock
 } from "lucide-react";
 import { CaseStudy, portfolioConfig } from "@/data/portfolioData";
 
@@ -71,9 +74,59 @@ export function CaseStudyDetail({ project }: CaseStudyDetailProps) {
             {project.title}
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
             {project.subtitle}
           </p>
+
+          {/* Action links: Live Demo, GitHub, WhatsApp project talk */}
+          <div className="flex flex-wrap items-center gap-3">
+            {project.liveDemoUrl ? (
+              <a
+                href={project.liveDemoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold bg-foreground text-background hover:opacity-90 transition-opacity shadow-subtle"
+              >
+                <span>Launch Live System</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            ) : (
+              <Link
+                href="/#contact"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold bg-foreground text-background hover:opacity-90 transition-opacity shadow-subtle"
+              >
+                <span>Request Live Demo Access</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            )}
+
+            {project.repoUrl ? (
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold border border-border bg-card hover:bg-muted text-foreground transition-colors"
+              >
+                <Github className="w-3.5 h-3.5" />
+                <span>Source Code</span>
+              </a>
+            ) : (
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-medium border border-border/80 bg-muted/40 text-muted-foreground">
+                <Lock className="w-3.5 h-3.5 text-muted-foreground" />
+                <span>Proprietary Client Architecture</span>
+              </span>
+            )}
+
+            <a
+              href={`https://wa.me/4915215484759?text=Hi%20Suhail,%20I'm%20interested%20in%20learning%20more%20about%20your%20${encodeURIComponent(project.title)}%20project.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors"
+            >
+              <MessageSquare className="w-3.5 h-3.5" />
+              <span>Discuss this Build on WhatsApp</span>
+            </a>
+          </div>
         </header>
 
         {/* Key Metrics Row */}
