@@ -26,6 +26,14 @@ export function Footer() {
               Ummat Pilgrimage Case Study
             </Link>
             <a
+              href={portfolioConfig.profile.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-600 dark:text-emerald-400 font-medium hover:underline transition-colors"
+            >
+              WhatsApp
+            </a>
+            <a
               href={`mailto:${portfolioConfig.profile.links.email}`}
               className="hover:text-foreground transition-colors"
             >

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Sparkles, CheckCircle2, Shield, Zap, Terminal } from "lucide-react";
+import { ArrowRight, Sparkles, CheckCircle2, Shield, Zap, Terminal, MessageSquare, Linkedin, Github } from "lucide-react";
 import { portfolioConfig } from "@/data/portfolioData";
 
 export function Hero() {
@@ -34,7 +34,7 @@ export function Hero() {
           </p>
 
           {/* Action CTAs */}
-          <div className="flex flex-wrap items-center gap-4 mb-12">
+          <div className="flex flex-wrap items-center gap-4 mb-6">
             <Link
               href="/#projects"
               className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3.5 rounded-xl font-medium text-sm hover:opacity-90 transition-opacity shadow-card"
@@ -43,12 +43,46 @@ export function Hero() {
               <ArrowRight className="w-4 h-4" />
             </Link>
 
+            <a
+              href={profile.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-medium text-sm bg-emerald-600 hover:bg-emerald-700 text-white transition-colors shadow-subtle"
+            >
+              <MessageSquare className="w-4 h-4" />
+              <span>Chat on WhatsApp</span>
+            </a>
+
             <Link
               href="/#contact"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-sm border border-border bg-card hover:bg-muted text-foreground transition-colors shadow-subtle"
             >
               <span>Discuss Your Project</span>
             </Link>
+          </div>
+
+          {/* Direct Social Links */}
+          <div className="flex items-center gap-4 text-xs text-muted-foreground mb-12">
+            <span>Connect directly:</span>
+            <a
+              href={profile.links.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-foreground font-medium transition-colors"
+            >
+              <Linkedin className="w-3.5 h-3.5 text-blue-600" />
+              <span>LinkedIn</span>
+            </a>
+            <span className="text-border">•</span>
+            <a
+              href={profile.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-foreground font-medium transition-colors"
+            >
+              <Github className="w-3.5 h-3.5" />
+              <span>GitHub</span>
+            </a>
           </div>
 
           {/* Trust indicators */}

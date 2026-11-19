@@ -37,18 +37,23 @@ export interface CaseStudy {
 
 export const portfolioConfig = {
   profile: {
-    name: "Suhail",
+    name: "Suhail Shabbir Shaikh",
+    shortName: "Suhail",
     title: "Full-Stack Developer & Software Consultant",
     tagline: "Architecting high-scale web platforms, intelligent workflows, and reliable cloud solutions.",
     bio: "I partner with startups and established enterprises to turn complex operational workflows into intuitive, resilient digital products. From real-time telemetry pipelines to high-conversion booking engines, I build end-to-end solutions that drive measurable business outcomes.",
-    location: "Available Worldwide (Remote)",
+    location: "Germany / India (Available Worldwide Remote)",
     yearsExperience: "5+ Years",
     projectsDelivered: "15+",
     availabilityStatus: "Open for New Client Projects",
+    phone: "+49 15215484759",
+    secondaryPhone: "+91 9130661137",
+    whatsapp: "https://wa.me/4915215484759?text=Hi%20Suhail,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
+    whatsappIndia: "https://wa.me/919130661137?text=Hi%20Suhail,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
     links: {
       email: "suhail.consulting@example.com",
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "https://github.com/SuhailShabbirShaikh",
+      linkedin: "https://www.linkedin.com/in/suhail-shaikh-dev",
       twitter: "https://twitter.com",
       calBooking: "https://cal.com",
     },

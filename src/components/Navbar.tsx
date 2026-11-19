@@ -15,7 +15,7 @@ export function Navbar() {
         {/* Brand */}
         <div className="flex items-center gap-3">
           <Link href="/" className="font-semibold text-lg tracking-tight hover:opacity-80 transition-opacity">
-            {portfolioConfig.profile.name}
+            {portfolioConfig.profile.shortName || portfolioConfig.profile.name}
             <span className="text-blue-600 dark:text-blue-400">.</span>
           </Link>
           <div className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">

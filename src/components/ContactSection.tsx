@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { portfolioConfig } from "@/data/portfolioData";
-import { Mail, Calendar, ArrowRight, CheckCircle2, Clock, Globe } from "lucide-react";
+import { Mail, Calendar, ArrowRight, CheckCircle2, Clock, Globe, Phone, MessageSquare, Linkedin, Github } from "lucide-react";
 
 export function ContactSection() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -37,8 +37,59 @@ export function ContactSection() {
             </p>
 
             <div className="space-y-4 pt-4 border-t border-border">
+              {/* WhatsApp Quick Chat */}
+              <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+                    <MessageSquare className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold text-emerald-800 dark:text-emerald-300">Fastest Response</div>
+                    <div className="text-sm font-bold text-foreground">Chat via WhatsApp</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={portfolioConfig.profile.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors"
+                  >
+                    Germany (+49)
+                  </a>
+                  <a
+                    href={portfolioConfig.profile.whatsappIndia}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600/90 hover:bg-emerald-700 text-white transition-colors"
+                  >
+                    India (+91)
+                  </a>
+                </div>
+              </div>
+
+              {/* Direct Calling / Phone */}
               <div className="flex items-center gap-3 text-sm text-foreground">
-                <div className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center">
+                <div className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground">Mobile &amp; Direct Call</div>
+                  <div className="flex flex-wrap gap-x-3 gap-y-1 font-medium text-xs sm:text-sm">
+                    <a href={`tel:${portfolioConfig.profile.phone}`} className="hover:underline">
+                      {portfolioConfig.profile.phone} (DE)
+                    </a>
+                    <span className="text-muted-foreground">•</span>
+                    <a href={`tel:${portfolioConfig.profile.secondaryPhone}`} className="hover:underline">
+                      {portfolioConfig.profile.secondaryPhone} (IN)
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Direct Email */}
+              <div className="flex items-center gap-3 text-sm text-foreground">
+                <div className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center shrink-0">
                   <Mail className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
@@ -49,18 +100,38 @@ export function ContactSection() {
                 </div>
               </div>
 
+              {/* LinkedIn & GitHub */}
               <div className="flex items-center gap-3 text-sm text-foreground">
-                <div className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center">
-                  <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                <div className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center shrink-0">
+                  <Linkedin className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground">Response Time</div>
-                  <div className="font-medium">Usually within 12 - 24 hours</div>
+                  <div className="text-xs text-muted-foreground">Professional Profiles</div>
+                  <div className="flex items-center gap-3 font-medium text-xs sm:text-sm">
+                    <a
+                      href={portfolioConfig.profile.links.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline text-blue-600 dark:text-blue-400"
+                    >
+                      LinkedIn Profile &rarr;
+                    </a>
+                    <span className="text-muted-foreground">•</span>
+                    <a
+                      href={portfolioConfig.profile.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline text-foreground"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
 
+              {/* Location */}
               <div className="flex items-center gap-3 text-sm text-foreground">
-                <div className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center">
+                <div className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center shrink-0">
                   <Globe className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
