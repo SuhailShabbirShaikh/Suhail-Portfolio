@@ -51,7 +51,7 @@ export const portfolioConfig = {
     whatsapp: "https://wa.me/4915215484759?text=Hi%20Suhail,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
     whatsappIndia: "https://wa.me/919130661137?text=Hi%20Suhail,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
     links: {
-      email: "suhail.consulting@example.com",
+      email: "suhailshaikh9130@gmail.com",
       github: "https://github.com/SuhailShabbirShaikh",
       linkedin: "https://www.linkedin.com/in/suhail-shaikh-dev",
       twitter: "https://twitter.com",
