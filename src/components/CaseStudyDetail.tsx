@@ -44,8 +44,8 @@ export function CaseStudyDetail({ project }: CaseStudyDetailProps) {
   const otherProject = portfolioConfig.caseStudies.find((p) => p.slug !== project.slug);
 
   return (
-    <article className="py-12 md:py-20">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <article className="pt-28 pb-20 md:pt-36 md:pb-32 aura-bg">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Navigation Breadcrumb */}
         <div className="mb-8">
           <Link
